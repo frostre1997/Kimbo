@@ -1,4 +1,4 @@
-name: Kimbo
+name: Build Kimbo APK
 
 on:
   push:
@@ -12,11 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: Set up JDK 11
+      - name: Set up JDK 17 (for sdkmanager)
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '11'
+          java-version: '17'
 
       - name: Set up Android SDK
         run: |
@@ -33,6 +33,12 @@ jobs:
           echo "ANDROID_HOME=$ANDROID_SDK_ROOT" >> $GITHUB_ENV
           echo "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin" >> $GITHUB_PATH
           echo "$ANDROID_SDK_ROOT/platform-tools" >> $GITHUB_PATH
+
+      - name: Set up JDK 11 (for Gradle build)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
 
       - name: Build with Gradle
         run: ./gradlew assembleDebug --stacktrace
