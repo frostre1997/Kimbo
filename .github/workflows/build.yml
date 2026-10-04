@@ -48,4 +48,4 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: kimbo-debug-apk
-          path: limbo-android-x86/build/outputs/apk/debug/*.apk
+          path: **/build/outputs/apk/debug/*.apk
