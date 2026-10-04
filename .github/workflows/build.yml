@@ -1,4 +1,4 @@
-name: Build Kimbo APK
+name: Kimbo
 
 on:
   push:
