@@ -7,12 +7,12 @@
 
     <application
         tools:replace="android:label"
-        android:label="Limbo PowerPC Emulator"
+        android:label="Kimbo-ppc"
         >
         <activity
             android:name="LimboEmuActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
-            android:label="Limbo PowerPC"
+            android:label="Kimbo-ppc"
             android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>

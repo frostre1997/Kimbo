@@ -7,12 +7,12 @@
 
     <application
         tools:replace="android:label"
-        android:label="Limbo SPARC Emulator"
+        android:label="Kimbo-sparc"
         >
         <activity
             android:name="LimboEmuActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
-            android:label="Limbo SPARC"
+            android:label="Kimbo-sparc"
             android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
