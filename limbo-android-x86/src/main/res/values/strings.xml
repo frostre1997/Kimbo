@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Kimbo X86</string>
+    <string name="app_name">Kimbo</string>
     <string name="app_short_name">Limbo x86</string>
     <string name="DebianLinux">Debian Linux</string>
     <string name="DebianLinuxDescr">An active open source Linux-based OS with desktop gui, audio, network</string>
